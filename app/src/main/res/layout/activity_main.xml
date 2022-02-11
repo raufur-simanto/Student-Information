@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:backgroundTint="#EFF0F6"
+    >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Information"
+        android:textSize="35dp"
+        android:shadowRadius="2"
+        android:shadowColor="#0000ff"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textFontWeight="800"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/user"
+        android:layout_alignBottom="@id/editTextUsername"
+        />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageUser"
+        android:hint="UserName"
+        android:inputType="text"
+        />
+
+
+    <ImageView
+        android:id="@+id/password"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/imageUser"
+        android:src="@drawable/password"
+        android:layout_alignBottom="@id/editTextPassword"/>/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:inputType="textPassword"
+        android:hint="Password"
+     />
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/email"
+        android:layout_below="@+id/password"
+        android:layout_alignBottom="@id/editTextEmail"/>/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/phone"
+        android:layout_below="@+id/email"
+        android:layout_alignBottom="@id/editTextPhoneNumber"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:inputType="phone"
+        android:hint="PhoneNumber"
+        />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_toRightOf="@id/buttonClear"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Save"
+        android:onClick="saveData"
+        android:textColor="@color/white"
+        android:paddingHorizontal="40dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#102997"
+       />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="Clear"
+        android:onClick="clearData"
+        android:textColor="@color/white"
+        android:paddingHorizontal="40dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#102997"
+
+        />
+
+    <ListView
+        android:id="@+id/listViewStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSave"
+        >
+
+
+    </ListView>
+
+
+
+</RelativeLayout>

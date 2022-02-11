@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"/>
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raufur Rahman"
+        android:layout_toRightOf="@id/imageViewUser"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01626217134"
+        android:layout_alignBottom="@id/imageViewUser"
+        android:layout_toRightOf="@id/imageViewUser"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/imageViewPhone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/call"
+
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/imageViewUser"/>
+
+</RelativeLayout>
